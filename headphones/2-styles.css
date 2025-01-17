@@ -99,7 +99,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 180px 10px 60px 10px;
+    padding: 60px 10px ;
 }
 
 .part1 p {
@@ -107,6 +107,7 @@ button:hover {
     font-weight: 500;
     text-align: center;
     max-width: 325px;
+    margin-top: 60px;
 }
 
 .part2 {
@@ -140,15 +141,22 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    padding: 150px 10px 100px 10px;
+    padding: 100px 10px 100px 10px;
 }
 
-.background2 p {
+.background2 h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.background2 h4 {
     color: white;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     max-width: 19.0625rem;
+    margin-top: 80px;
 }
 .pentagone {
     display: grid;
@@ -187,85 +195,6 @@ button:hover {
 .penta-content p {
     font-size: 14px;
     font-weight: 500;
-}
-
-.minimal-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;  
-    padding: 150px 10px 150px 10px;
-}
-
-.minimal-form h3 {
-    text-align: center;
-    font-weight: bolder;
-}
-
-.minimal-form input {
-    border: none;
-    border-bottom: 1px solid #979797; 
-    background: none;
-    font-size: 14px; 
-    padding: 5px 0;
-    outline: none;
-    width: 100%; 
-}
-
-input::placeholder {
-    color: black; 
-    font-weight: bold; 
-}
-
-.minimal-form input:focus {
-    border-bottom: 2px solid black; 
-    transition: border-color 0.3s ease;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    background-color: black;
-    padding: 80px 0px 40px;
-}
-
-.foot {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 60px;
-}
-.social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    border: none;
-}
-
-.social div i {
-    color: black;
-}
-
-footer p {
-    text-align: center;
-    margin-top: 20px;
-    color: #575353;
 }
 
 
@@ -347,27 +276,6 @@ footer p {
        max-width: 472px;
     }
     
-    .minimal-form {
-        margin-inline: auto;
-        max-width: 335px;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    footer {
-        align-items: flex-start;
-    }
-   
-    .foot {
-        align-self: flex-start;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 100%;
-        padding-inline: 80px;
-    }
-
-    footer p {
-        align-self: center;
-    }
 }
 
 /* Desktop: 1024px and up */
@@ -392,9 +300,6 @@ footer p {
         gap: 0px;
      }
 
-     .foot {
-        padding-inline: 200px;
-     }
 }
 
 

@@ -1,0 +1,451 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.hero {
+    background-image: url('/images/headphones_hero_1.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 21px 10px 80px 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+ul {
+    display: none;
+}
+
+.logo-img {
+    width: 10.0625rem;
+    height: 2rem;
+}
+
+.logo-img img {
+    object-fit: cover;
+    width: 10.0625rem;
+    height: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 327px;
+}
+
+.hero-content h1{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hero-content h4 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 279px;
+}
+
+ button {
+    padding: 16px 30px;
+    background-color: #FF6565;
+    border-radius: 100vw;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffff;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.hero-content p {
+    color: #ffff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 26px;
+    
+}
+
+.part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10px ;
+}
+
+.part1 p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 325px;
+    margin-top: 60px;
+}
+
+.part2 {
+    display: grid;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+/* Animation for "What we do" section items */
+.lorems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.lorems:hover {
+    transform: translateY(-10px) rotate(5deg); /* Fun hover effect */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lorems p {
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 12.9375rem;
+}
+
+.background2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 100px 10px 100px 10px;
+}
+
+/* Continuous animation for "Our results" section title */
+.background2 h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out infinite alternate; /* Title animation */
+}
+
+.background2 h4 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 19.0625rem;
+    margin-top: 80px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Hover effect for subtitle */
+}
+
+.background2 h4:hover {
+    transform: scale(1.05);
+    color: #3498db; /* Changes to blue on hover */
+}
+
+.pentagone {
+    display: grid;
+    justify-content: center;
+    text-align: center; 
+    gap: 4rem;
+    margin-top: 100px;
+}
+
+/* Continuous bounce animation for pentagons */
+.penta {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    animation: bounce 2.5s ease-in-out infinite;
+    transition: transform 0.3s ease; /* Hover effect for pentagons */
+}
+
+.penta:hover {
+    transform: scale(1.1);
+}
+
+.penta img {
+    height: 100%;
+    width: 100%;
+}
+
+.penta-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    color: white; 
+}
+
+.penta-content h3 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.penta-content p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.minimal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;  
+    padding: 150px 10px 150px 10px;
+}
+
+.minimal-form h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.minimal-form input {
+    border: none;
+    border-bottom: 1px solid #979797; 
+    background: none;
+    font-size: 14px; 
+    padding: 5px 0;
+    outline: none;
+    width: 100%; 
+}
+
+input::placeholder {
+    color: black; 
+    font-weight: bold; 
+}
+
+.minimal-form input:focus {
+    border-bottom: 2px solid black; 
+    transition: border-color 0.3s ease;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: black;
+    padding: 80px 0px 40px;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 60px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: none;
+}
+
+.social div i {
+    color: black;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    color: #575353;
+}
+
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+     .hero {
+        padding-inline: 3rem;
+     }
+
+    header nav img {
+        display: none;
+    }
+
+    .logo-img img {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    ul li {
+        list-style: none;
+        text-decoration: none;
+       
+    }
+    
+    ul li a {
+        color: #f5f0f0;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        color: #FF6565; /* Change color on hover */
+    }
+
+    .hero-content h4 {
+        width: 100%;
+    }
+
+     button {
+        margin-top: 40px;
+     }
+
+     .hero-content p {
+        max-width: 768px;
+     }
+
+     .part1 p {
+        max-width: 637px;
+     }
+
+     .part2 {
+        grid-template-columns: auto auto;
+        max-width: 472px;
+     }
+
+     .background2 p{
+         max-width: 637px;
+     }
+
+     .background2 h4{
+        max-width: 637px;
+    }
+
+    .pentagone {
+       grid-template-columns: auto auto;
+       max-width: 472px;
+    }
+    
+    .minimal-form {
+        margin-inline: auto;
+        max-width: 335px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    footer {
+        align-items: flex-start;
+    }
+   
+    .foot {
+        align-self: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        padding-inline: 80px;
+    }
+
+    footer p {
+        align-self: center;
+    }
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+
+    .part1 {
+        padding-inline: 80px;
+    }
+    .part2 {
+        grid-template-columns: auto auto auto auto;
+        max-width: 1002px;
+     }
+
+     .background2 {
+        padding-inline: 80px;
+     }
+     .pentagone {
+        grid-template-columns: auto auto auto auto;
+        width: 100%;
+        max-width: 1002px;
+        justify-content: space-between;
+        gap: 0px;
+     }
+
+     .foot {
+        padding-inline: 200px;
+     }
+}
+
+
